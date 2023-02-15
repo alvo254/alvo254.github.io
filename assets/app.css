@@ -17,11 +17,37 @@ header{
 .right{
     width: 100%;
 }
+.left{
+    width: 100%;
+}
+
+.left > h1{
+    padding-top: 120px;
+}
 
 .right > img{
-    height: 250px;
+    /* position: relative; */
+    max-width: 96.66667%;
+    min-height: 1px;
+    min-width: 66.66667%;
+    padding-top: 90px;
+    padding-left: 200px;
+
+    
 }
 
 .homepage > img{
     width: 100%;
+}
+
+.active:hover{
+    display: block;
+
+}
+
+.nav-link:hover{
+    display: block;
+}
+.dropdown:hover .dropdown-menu{
+    display: block;
 }
