@@ -9,14 +9,14 @@ head = {
     'User-Agent' : 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36'
 }
 
-url = Request('https://www.classcentral.com/', headers=head)
-page = urlopen(url)
+# url = Request('https://www.classcentral.com/', headers=head)
+# page = urlopen(url)
 
-soup = b(page, "lxml")
-# print(soup)
+# soup = b(page, "lxml")
+# # print(soup)
 
-for link in soup.find_all('a', href=True):
-    print(link['href'])
+# for link in soup.find_all('a', href=True):
+#     print(link['href'])
 
 # print(links)
 
@@ -37,7 +37,7 @@ for link in soup.find_all('a', href=True):
 
 r = requests.get('https://www.classcentral.com/', headers=head)
 # pipe this into a html file and get the whole website
-# print(r.text)
+print(r.lxml)
 
 
 
